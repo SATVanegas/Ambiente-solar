@@ -90,6 +90,7 @@ Los códigos de esta tabla son los que tenían en la propuesta original. Despué
   - M0 a M7 conservan su código.
   - Tablero gerencial y agente: era M9, ahora es M8.
   - Legal y cumplimiento contractual: era M12, ahora es M9.
+- Al final de "La solución" hay un bloque **"Para una segunda fase"** que los menciona como opciones a futuro. Dice que no hacen parte de esta propuesta ni de su precio y que se cotizarían por separado. La FAQ "¿Qué queda fuera de esta propuesta?" dice lo mismo.
 - Se quitó la etapa "Operación" del recorrido por etapas, porque solo la cubría Operación y monitoreo.
 - Cronograma: se quitaron las barras de los tres módulos. Las entregas de los meses 5, 6 y 7 ya no mencionan comercial, CRM ni gestión humana.
 - Preguntas frecuentes: ya no se menciona la integración con nómina, y se quitó la línea de Operación y monitoreo en "Qué queda fuera".

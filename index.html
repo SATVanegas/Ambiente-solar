@@ -377,6 +377,17 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 .proto-s{grid-column:1;font-size:15px;color:var(--night-soft)}
 .proto-go{grid-column:2;grid-row:1/4;background:var(--sun);color:#1a1006;border-radius:999px;padding:12px 20px;font-weight:700;white-space:nowrap}
 .close .btn{margin-top:22px}
+.phase2{margin-top:40px;border:1.5px dashed var(--line);border-radius:16px;padding:22px 24px;display:grid;gap:16px}
+.phase2-head{display:grid;gap:6px;max-width:66ch}
+.phase2-head h3{font-size:24px;font-weight:800}
+.phase2-head p{color:var(--ink-soft);font-size:16px}
+.p2grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:12px}
+.p2{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;gap:6px;align-content:start;min-width:0}
+.p2 .top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.p2 .ic{width:34px;height:34px;border-radius:9px;background:var(--grid);display:grid;place-items:center}
+.p2 .ic svg{width:19px;height:19px;stroke:var(--ink-soft);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.p2 b{font-family:var(--f-display);font-stretch:85%;font-size:18px}
+.p2 p{font-size:14.5px;color:var(--ink-soft)}
 @media (max-width:900px){
   .proto{grid-template-columns:1fr}
   .proto-go{grid-column:1;grid-row:auto;justify-self:start;margin-top:8px}
@@ -466,6 +477,19 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
         <span class="lbl">Ver módulos de:</span>
       </div>
       <div class="mgrid" id="mgrid"></div>
+
+      <div class="phase2">
+        <div class="phase2-head">
+          <span class="eyebrow">Fase 2 · a futuro</span>
+          <h3>Para una segunda fase</h3>
+          <p>Estos módulos <b>no hacen parte de esta propuesta ni de su precio</b>. Los dejamos identificados porque pueden sumarse más adelante, sobre la misma base, cuando la empresa decida avanzar con ellos. Se cotizarían por separado.</p>
+        </div>
+        <div class="p2grid">
+          <div class="p2"><span class="top"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11a4 4 0 100-8 4 4 0 000 8zM2 21c0-4 3-6 7-6s7 2 7 6M17 11a3 3 0 100-6M22 21c0-3-2-5-5-5"/></svg></span><span class="badge later">Fase 2</span></span><b>Gestión humana</b><p>Horas de campo que llegan directo a nómina, personal asignado a cada proyecto y checklist de retiro.</p></div>
+          <div class="p2"><span class="top"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a5 5 0 100 10 5 5 0 000-10zM12 1v3M12 20v3M1 12h3M20 12h3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></span><span class="badge later">Fase 2</span></span><b>Operación y monitoreo</b><p>Rendimiento de las plantas en operación, alarmas de inversores, reporte a XM y mantenimiento. Requiere granjas operando y hardware definido.</p></div>
+          <div class="p2"><span class="top"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21a9 9 0 100-18 9 9 0 000 18zM12 16a4 4 0 100-8 4 4 0 000 8zM12 12.5v-1"/></svg></span><span class="badge later">Fase 2</span></span><b>Comercial y CRM</b><p>Contactos que llegan por la web y la calculadora solar, embudo de oportunidades y paso de la venta ganada a proyecto.</p></div>
+        </div>
+      </div>
 
       <a class="proto" href="centro-de-control.html">
         <span class="proto-k">Prototipo navegable</span>
@@ -653,6 +677,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
         <details>
           <summary>¿Qué queda fuera de esta propuesta?</summary>
           <div class="ans"><ul>
+            <li>Gestión humana, operación y monitoreo de plantas, y comercial y CRM. Quedan para una posible segunda fase y se cotizarían por separado.</li>
             <li>Generación automática de planos completos en AutoCAD (esta fase valida cajetines y planos).</li>
             <li>Licencias de terceros: software contable, nómina, Microsoft o Google Workspace.</li>
             <li>Hardware: celulares, tabletas, cámaras de bodega.</li>
