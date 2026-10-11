@@ -643,7 +643,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
         <details>
           <summary>¿Qué incluye el desarrollo?</summary>
           <div class="ans"><ul>
-            <li>Los módulos M0 a M7, M9 y M12 (legal y cumplimiento contractual).</li>
+            <li>Los módulos M0 a M9.</li>
             <li>App de campo para Android y iPhone que funciona sin señal.</li>
             <li>Integración con el software contable vigente, si el proveedor tiene API.</li>
             <li>Migración de proyectos activos, listas de precios y catálogos.</li>
@@ -814,7 +814,7 @@ const MODS = [
   ],
   v:[["Estado de cuenta por técnico","Anticipos, legalizaciones y saldo."],["Bandeja de legalizaciones","Facturas leídas, listas para aprobar por contabilidad."],["P&G por proyecto","Ingresos, costos, compromisos y margen."],["Flujo de caja","Proyección por proyecto y consolidada."]],
   a:["Anticipos sin legalizar después del plazo.","Gasto que supera el presupuesto del centro de costos.","Centro de costos mal digitado."]},
- {c:"M9",n:"Tablero gerencial y agente",st:"inc",ph:"Mes 1 y meses 7–8",
+ {c:"M8",n:"Tablero gerencial y agente",st:"inc",ph:"Mes 1 y meses 7–8",
   why:"La vista de la gerencia: cada proyecto en presupuesto, cronograma y alcance, y un agente que dice dónde mirar sin revisar todo.",
   who:"Gerencia, dirección de proyectos y líderes de área.",
   f:[
@@ -824,7 +824,7 @@ const MODS = [
   ],
   v:[["Portafolio","Embudo de granjas por etapa con semáforo."],["Tablero del proyecto","Presupuesto, curva S y alcance en una pantalla."],["Indicadores de empresa","KPIs por área con meta."],["Bandeja de alertas","Priorizadas por impacto y responsable."],["Asistente","Preguntas en lenguaje natural sobre los datos del sistema."]],
   a:["Resumen diario a cada persona y semanal a gerencia.","Escalamiento cuando un pendiente no se atiende."]},
- {c:"M12",n:"Legal y cumplimiento contractual",st:"inc",ph:"Meses 6–8",
+ {c:"M9",n:"Legal y cumplimiento contractual",st:"inc",ph:"Meses 6–8",
   why:"Lee los contratos con IA, convierte cada cláusula en obligaciones con fecha y responsable, y alerta cuando un proyecto está incumpliendo o va camino a incumplir algo pactado.",
   who:"Gerencia, área jurídica o abogado externo, dirección de proyectos, compras y contabilidad.",
   f:[
@@ -844,9 +844,9 @@ const PROBS = [
  ["Trámites con plazos que nadie controla","Solicitudes a entidades y operadores de red se envían sin control de radicados ni plazos, y los vencimientos se notan tarde.","Plantillas, envío desde el buzón corporativo, conteo de días hábiles con festivos y escalamiento con el borrador listo.",["M1"]],
  ["Equipos y materiales sin trazabilidad","Herramientas, EPP y materiales se pierden entre bodegas y obras, o llegan vencidos o incompletos justo cuando se necesitan.","Hoja de vida de cada activo, despacho con lista y recepción con firma, y bloqueo de lo vencido antes de que salga.",["M4"]],
  ["Días perdidos en sitio","Cuadrillas que llegan sin los cursos, el EPP o la autorización de ingreso que exige el cliente, con personal, viáticos y equipos parados.","Requisitos por cliente cruzados con el personal y el despacho, y el viaje no se programa hasta tener la autorización confirmada.",["M6"]],
- ["Obligaciones contractuales sin seguimiento","Los contratos se firman y se archivan. Hitos, pólizas, preavisos y multas se recuerdan tarde, cuando el incumplimiento ya ocurrió o la penalidad ya corre.","La IA lee cada contrato y lo convierte en obligaciones con fecha y responsable; el sistema las cruza con el avance real y alerta antes de incumplir.",["M12"]],
+ ["Obligaciones contractuales sin seguimiento","Los contratos se firman y se archivan. Hitos, pólizas, preavisos y multas se recuerdan tarde, cuando el incumplimiento ya ocurrió o la penalidad ya corre.","La IA lee cada contrato y lo convierte en obligaciones con fecha y responsable; el sistema las cruza con el avance real y alerta antes de incumplir.",["M9"]],
  ["Trabajo manual repetitivo","Memorias de cálculo, cartas, informes de corte y relaciones de gastos se arman a mano en cada proyecto y cada periodo.","Documentos generados desde los datos del proyecto y lectura de facturas con IA.",["M2","M5","M7"]],
- ["Dirección sin visibilidad consolidada","Para saber cómo va un proyecto hay que preguntar a varias personas y cruzar archivos; los problemas llegan cuando ya son costosos.","Tablero de presupuesto, cronograma y alcance por proyecto, y un agente que revisa a diario y avisa dónde mirar.",["M9"]]
+ ["Dirección sin visibilidad consolidada","Para saber cómo va un proyecto hay que preguntar a varias personas y cruzar archivos; los problemas llegan cuando ya son costosos.","Tablero de presupuesto, cronograma y alcance por proyecto, y un agente que revisa a diario y avisa dónde mirar.",["M8"]]
 ];
 const SCHED = [
  ["Demo mes 1: app de campo en obra con bitácora y protocolos, núcleo con proyectos reales y tablero v1","Si no hay conformidad: 50 % de esta cuota y fin del contrato"],
@@ -870,8 +870,8 @@ const ICON = {
  M5:"M8 2h8a1 1 0 011 1v18a1 1 0 01-1 1H8a1 1 0 01-1-1V3a1 1 0 011-1zM11 18h2",
  M6:"M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6zM9 12l2 2 4-4",
  M7:"M4 20V11M10 20V5M16 20v-6M21 20H3",
- M9:"M3 3h8v8H3zM13 3h8v5h-8zM13 10h8v11h-8zM3 13h8v8H3z",
- M12:"M12 3v18M6 21h12M4 7h16M4 7l-2.5 7a3 3 0 005 0zM20 7l-2.5 7a3 3 0 005 0z"
+ M8:"M3 3h8v8H3zM13 3h8v5h-8zM13 10h8v11h-8zM3 13h8v8H3z",
+ M9:"M12 3v18M6 21h12M4 7h16M4 7l-2.5 7a3 3 0 005 0zM20 7l-2.5 7a3 3 0 005 0z"
 };
 const svg = p => `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${p}"/></svg>`;
 const MOD = c => MODS.find(m => m.c === c);
@@ -922,11 +922,11 @@ renderProbs();
 /* ---------- Lifecycle ---------- */
 const STAGES = [
  {n:"Permisos",ic:"M1",today:"Cartas a entidades armadas a mano, radicados en correos personales y plazos que nadie cuenta.",with:"Solicitudes generadas en lote para todos los subproyectos, enviadas desde el buzón de la empresa y con semáforo de plazos en días hábiles.",mods:["M1","M0"]},
- {n:"RTB",ic:"M0",today:"Checklists marcados como completos sin soporte; se factura o se promete con avances que no son reales.",with:"Ningún ítem avanza sin evidencia; el comercial solo ve como listo para cobrar lo aprobado por dirección.",mods:["M1","M12"]},
+ {n:"RTB",ic:"M0",today:"Checklists marcados como completos sin soporte; se factura o se promete con avances que no son reales.",with:"Ningún ítem avanza sin evidencia; el comercial solo ve como listo para cobrar lo aprobado por dirección.",mods:["M1","M9"]},
  {n:"Diseño",ic:"M2",today:"Cálculos en Excel, memorias editadas a mano y planos que no coinciden con la lista de materiales.",with:"Motor de cálculo con normas RETIE, memoria en Word generada sola y validación cruzada entre planos y materiales.",mods:["M2"]},
  {n:"Compras",ic:"M3",today:"Órdenes en Excel y correo, compras consolidadas que terminan cargadas al proyecto equivocado.",with:"Orden de compra digital atada al presupuesto: si se pasa del tope, se bloquea y pide aprobación.",mods:["M3","M4","M7"]},
  {n:"Obra",ic:"M5",today:"Bitácoras y protocolos en papel o Excel; equipos que llegan vencidos o incompletos; días perdidos por accesos.",with:"App de campo sin señal con bitácora, protocolos firmados y fotos; despachos verificados y accesos confirmados antes de viajar.",mods:["M5","M6","M4"]},
- {n:"Entrega",ic:"M12",today:"Dossier armado a última hora; retegarantías retenidas por documentos que faltan.",with:"Dossier de entrega construido solo con lo registrado en obra, con lista de faltantes y alertas de obligaciones del contrato.",mods:["M5","M12"]}
+ {n:"Entrega",ic:"M9",today:"Dossier armado a última hora; retegarantías retenidas por documentos que faltan.",with:"Dossier de entrega construido solo con lo registrado en obra, con lista de faltantes y alertas de obligaciones del contrato.",mods:["M5","M9"]}
 ];
 const track = $("track");
 STAGES.forEach((s,i) => { const b=document.createElement("button"); b.type="button"; b.className="stage"; b.dataset.i=i; b.innerHTML=`<span class="nd">${svg(ICON[s.ic])}</span><span class="lb">${s.n}</span>`; b.addEventListener("click",()=>pickStage(i)); track.appendChild(b); });
@@ -937,12 +937,12 @@ function pickStage(i){
   $("stagePanel").innerHTML = `<div class="sp-box today"><h4>Hoy</h4><p>${s.today}</p></div><div class="sp-box with"><h4>Con el sistema</h4><p>${s.with}</p></div><div class="sp-box mods"><h4>Módulos que trabajan aquí</h4><div class="chipmods">${s.mods.map(c=>{const m=MOD(c);return `<button type="button" class="chipmod" data-open="${c}"><span class="ic">${svg(ICON[c])}</span><span>${m.n}<small>${c} · ver detalle</small></span></button>`;}).join("")}</div></div>`;
 }
 pickStage(4);
-$("always").innerHTML = `<span>En todas las etapas:</span>` + ["M0","M9","M7","M12"].map(c=>`<button type="button" class="chip" data-open="${c}">${MOD(c).n}</button>`).join("");
+$("always").innerHTML = `<span>En todas las etapas:</span>` + ["M0","M8","M7","M9"].map(c=>`<button type="button" class="chip" data-open="${c}">${MOD(c).n}</button>`).join("");
 
 /* ---------- Module grid ---------- */
 const AREAS = [["all","Todos"],["obra","Obra"],["ing","Trámites e ingeniería"],["ofi","Compras y finanzas"],["ger","Gerencia y legal"]];
-const AREA = {M0:"ger",M1:"ing",M2:"ing",M3:"ofi",M4:"obra",M5:"obra",M6:"obra",M7:"ofi",M9:"ger",M12:"ger"};
-const ORDER = ["M5","M0","M9","M1","M3","M4","M6","M2","M7","M12"];
+const AREA = {M0:"ger",M1:"ing",M2:"ing",M3:"ofi",M4:"obra",M5:"obra",M6:"obra",M7:"ofi",M8:"ger",M9:"ger"};
+const ORDER = ["M5","M0","M8","M1","M3","M4","M6","M2","M7","M9"];
 let area = "all";
 const fl = $("filters");
 AREAS.forEach(([k,l]) => { const b=document.createElement("button"); b.type="button"; b.className="chip"; b.dataset.a=k; b.textContent=l; b.setAttribute("aria-pressed", String(k===area)); b.onclick=()=>{ area=k; fl.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed", String(x.dataset.a===k))); filterMods(); }; fl.appendChild(b); });
@@ -986,11 +986,11 @@ document.addEventListener("keydown", e => { if ($("drawer").classList.contains("
 const MONTHS = ["Nov 2026","Dic 2026","Ene 2027","Feb 2027","Mar 2027","Abr 2027","May 2027","Jun 2027","Jul 2027"];
 const MS = ["Nov","Dic","Ene","Feb","Mar","Abr","May","Jun","Jul"];
 const GR = [
- {c:"M5",n:"App de campo",s:0,l:1},{c:"M0",n:"Núcleo",s:0,l:1},{c:"M9",n:"Tablero v1",s:0,l:1},
+ {c:"M5",n:"App de campo",s:0,l:1},{c:"M0",n:"Núcleo",s:0,l:1},{c:"M8",n:"Tablero v1",s:0,l:1},
  {c:"M1",n:"Trámites y RTB",s:1,l:2},{c:"M3",n:"Compras",s:2,l:3},{c:"M4",n:"Inventario y activos",s:3,l:2},
  {c:"M6",n:"SST y accesos",s:3,l:2},{c:"M2",n:"Ingeniería asistida",s:5,l:2},
- {c:"M7",n:"Finanzas de proyecto",s:5,l:2},{c:"M12",n:"Legal y contratos",s:5,l:3},
- {c:"M9",n:"Tablero completo y agente",s:6,l:2},{c:"—",n:"Estabilización y entrega",s:8,l:1}
+ {c:"M7",n:"Finanzas de proyecto",s:5,l:2},{c:"M9",n:"Legal y contratos",s:5,l:3},
+ {c:"M8",n:"Tablero completo y agente",s:6,l:2},{c:"—",n:"Estabilización y entrega",s:8,l:1}
 ];
 const TITLES = ["La obra bajo control","Informes que se arman solos","Trámites y compras en orden","Bodega y seguridad en sitio","Activos y despachos","Ingeniería y finanzas","Finanzas y contratos","Control total","Entrega y estabilización"];
 let mon = 0, playT = null;

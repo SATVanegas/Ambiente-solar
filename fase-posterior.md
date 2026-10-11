@@ -2,7 +2,9 @@
 
 Estos tres módulos salieron de la propuesta de octubre de 2026 y quedan anotados para una fase posterior. Si se retoman, se cotizan aparte.
 
-| Código | Módulo | Plan original |
+Los códigos de esta tabla son los que tenían en la propuesta original. Después de sacarlos, la propuesta se renumeró para que no quedaran saltos, así que en la versión actual M8 y M9 son otros módulos (ver el final de este archivo). Si se retoman, se les asigna un código nuevo a partir de M10.
+
+| Código original | Módulo | Plan original |
 |---|---|---|
 | M8 | Gestión humana | Meses 7–8 |
 | M10 | Operación y monitoreo | Ya era fase posterior |
@@ -10,7 +12,7 @@ Estos tres módulos salieron de la propuesta de octubre de 2026 y quedan anotado
 
 ---
 
-## M8 · Gestión humana
+## Gestión humana (antes M8)
 
 **Para qué:** las horas de campo llegan solas a nómina, sin llamar a cada ingeniero antes de liquidar.
 
@@ -34,7 +36,7 @@ Estos tres módulos salieron de la propuesta de octubre de 2026 y quedan anotado
 
 ---
 
-## M10 · Operación y monitoreo
+## Operación y monitoreo (antes M10)
 
 **Para qué:** el sistema operativo de las plantas en operación. Se construye cuando haya granjas operando y hardware definido.
 
@@ -57,7 +59,7 @@ Estos tres módulos salieron de la propuesta de octubre de 2026 y quedan anotado
 
 ---
 
-## M11 · Comercial y CRM
+## Comercial y CRM (antes M11)
 
 **Para qué:** conecta la venta con el proyecto desde la primera visita y concentra los contactos que llegan por la web y la calculadora solar.
 
@@ -84,10 +86,13 @@ Estos tres módulos salieron de la propuesta de octubre de 2026 y quedan anotado
 
 ## Qué cambió en la propuesta al sacarlos
 
-- El catálogo pasó de 13 a 10 módulos: M0 a M7, M9 y M12.
-- Se quitó la etapa "Operación" del recorrido por etapas, porque solo la cubría M10.
-- Cronograma: se quitaron las barras de M8, M10 y M11. Las entregas de los meses 5, 6 y 7 ya no mencionan comercial, CRM ni gestión humana.
-- Preguntas frecuentes: ya no se menciona la integración con nómina, y se quitó la línea de M10 en "Qué queda fuera".
+- El catálogo pasó de 13 a 10 módulos y se renumeró sin saltos, de M0 a M9:
+  - M0 a M7 conservan su código.
+  - Tablero gerencial y agente: era M9, ahora es M8.
+  - Legal y cumplimiento contractual: era M12, ahora es M9.
+- Se quitó la etapa "Operación" del recorrido por etapas, porque solo la cubría Operación y monitoreo.
+- Cronograma: se quitaron las barras de los tres módulos. Las entregas de los meses 5, 6 y 7 ya no mencionan comercial, CRM ni gestión humana.
+- Preguntas frecuentes: ya no se menciona la integración con nómina, y se quitó la línea de Operación y monitoreo en "Qué queda fuera".
 - Insumos solicitados: ya no se pide el CRM ni el software de nómina actuales, ni el acceso a los datos de una planta en operación.
 - **No se cambiaron los precios:** siguen siendo $90.000.000 de desarrollo y $3.200.000 al mes de soporte.
 - **El mockup (`centro-de-control.html`) no se tocó.** Todavía muestra las páginas de Operación, Gestión humana y Comercial (con prospectos), y el login dice "13 módulos".
