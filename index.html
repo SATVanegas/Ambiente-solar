@@ -130,9 +130,9 @@ section[id]{scroll-margin-top:72px}
 .pcard .flip{position:absolute;top:14px;right:14px;font-family:var(--f-mono);font-size:11px;color:var(--ink-soft)}
 
 /* Lifecycle */
-.track{position:relative;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:0;margin-bottom:24px}
-.track::before{content:"";position:absolute;left:7%;right:7%;top:23px;height:3px;background:var(--line);border-radius:2px}
-.track .fill{position:absolute;left:7%;top:23px;height:3px;background:var(--sun);border-radius:2px;transition:width .4s ease}
+.track{position:relative;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0;margin-bottom:24px}
+.track::before{content:"";position:absolute;left:8.33%;right:8.33%;top:23px;height:3px;background:var(--line);border-radius:2px}
+.track .fill{position:absolute;left:8.33%;top:23px;height:3px;background:var(--sun);border-radius:2px;transition:width .4s ease}
 .stage{border:0;background:none;display:grid;justify-items:center;gap:8px;padding:0 4px;position:relative;z-index:1}
 .stage .nd{width:48px;height:48px;border-radius:50%;background:var(--surface);border:3px solid var(--line);display:grid;place-items:center;transition:all .25s}
 .stage .nd svg{width:22px;height:22px;stroke:var(--ink-soft);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
@@ -362,7 +362,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   .hero .wrap,.plan,.inv,.mk-top,.close .wrap,.stage-panel{grid-template-columns:1fr}
   .farm{max-width:420px;margin:0 auto}
   .facts{grid-template-columns:1fr}
-  .track{grid-template-columns:repeat(7,minmax(64px,1fr));overflow-x:auto;padding-bottom:6px}
+  .track{grid-template-columns:repeat(6,minmax(64px,1fr));overflow-x:auto;padding-bottom:6px}
   .stage .lb{font-size:12.5px}
   .guarantee{grid-template-columns:1fr}
   .brand span.t{display:none}
@@ -456,7 +456,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
       <div class="ch-head">
         <span class="ch-num">02</span>
         <h2>Un sistema que acompaña toda la vida de la granja</h2>
-        <p>Toca cada etapa para ver qué cambia y qué módulos trabajan en ella. Después explora los 13 módulos uno por uno.</p>
+        <p>Toca cada etapa para ver qué cambia y qué módulos trabajan en ella. Después explora los 10 módulos uno por uno.</p>
       </div>
       <div class="track" id="track"><div class="fill" id="trackFill"></div></div>
       <div class="stage-panel" id="stagePanel" aria-live="polite"></div>
@@ -469,7 +469,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 
       <a class="proto" href="centro-de-control.html">
         <span class="proto-k">Prototipo navegable</span>
-        <b>Vean los 13 módulos funcionando en el Centro de Control</b>
+        <b>Vean el sistema funcionando en el Centro de Control</b>
         <span class="proto-s">12 granjas de ejemplo con datos simulados: tablero, obra, compras, bodega, finanzas y contratos.</span>
         <span class="proto-go">Abrir el prototipo →</span>
       </a>
@@ -499,7 +499,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
           <div class="play"><button type="button" id="playBtn">▶ Reproducir los 9 meses</button></div>
         </div>
         <div class="gwrap"><div class="gantt" id="gantt"></div>
-          <div class="legend"><span><i style="background:var(--sun)"></i>Entregado</span><span><i style="background:repeating-linear-gradient(135deg,var(--sun) 0 4px,var(--sun-tint) 4px 8px)"></i>En construcción</span><span><i style="background:var(--next)"></i>Próximo</span><span><i style="border:1.5px dashed var(--warn)"></i>Fase posterior</span></div>
+          <div class="legend"><span><i style="background:var(--sun)"></i>Entregado</span><span><i style="background:repeating-linear-gradient(135deg,var(--sun) 0 4px,var(--sun-tint) 4px 8px)"></i>En construcción</span><span><i style="background:var(--next)"></i>Próximo</span></div>
         </div>
       </div>
       <div class="guarantee">
@@ -531,7 +531,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
           <div class="cost dark">
             <div class="t">Desarrollo e implementación</div>
             <div class="v">$90.000.000</div>
-            <ul><li>9 cuotas de $10.000.000, cada una contra demostración</li><li>13 módulos, app de campo, migración y capacitación</li></ul>
+            <ul><li>9 cuotas de $10.000.000, cada una contra demostración</li><li>10 módulos, app de campo, migración y capacitación</li></ul>
           </div>
           <div class="cost">
             <div class="t">Soporte y sostenimiento después de la entrega</div>
@@ -643,9 +643,9 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
         <details>
           <summary>¿Qué incluye el desarrollo?</summary>
           <div class="ans"><ul>
-            <li>Los módulos M0 a M9, M11 (comercial y CRM) y M12 (legal y cumplimiento contractual).</li>
+            <li>Los módulos M0 a M7, M9 y M12 (legal y cumplimiento contractual).</li>
             <li>App de campo para Android y iPhone que funciona sin señal.</li>
-            <li>Integración con el software contable vigente, si el proveedor tiene API. La integración con nómina depende del proveedor que use la empresa.</li>
+            <li>Integración con el software contable vigente, si el proveedor tiene API.</li>
             <li>Migración de proyectos activos, listas de precios y catálogos.</li>
             <li>Capacitación por rol y manuales de uso.</li>
           </ul></div>
@@ -653,7 +653,6 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
         <details>
           <summary>¿Qué queda fuera de esta propuesta?</summary>
           <div class="ans"><ul>
-            <li>M10 Operación y monitoreo de granjas: se cotiza cuando haya plantas operando y hardware definido.</li>
             <li>Generación automática de planos completos en AutoCAD (esta fase valida cajetines y planos).</li>
             <li>Licencias de terceros: software contable, nómina, Microsoft o Google Workspace.</li>
             <li>Hardware: celulares, tabletas, cámaras de bodega.</li>
@@ -815,44 +814,16 @@ const MODS = [
   ],
   v:[["Estado de cuenta por técnico","Anticipos, legalizaciones y saldo."],["Bandeja de legalizaciones","Facturas leídas, listas para aprobar por contabilidad."],["P&G por proyecto","Ingresos, costos, compromisos y margen."],["Flujo de caja","Proyección por proyecto y consolidada."]],
   a:["Anticipos sin legalizar después del plazo.","Gasto que supera el presupuesto del centro de costos.","Centro de costos mal digitado."]},
- {c:"M8",n:"Gestión humana",st:"inc",ph:"Meses 7–8",
-  why:"Las horas de campo llegan solas a nómina, sin llamar a cada ingeniero antes de liquidar.",
-  who:"Gestión humana, ingenieros a cargo de cuadrillas y contabilidad.",
-  f:[
-   ["Tiempo y nómina",["Registro diario de jornada y horas extras desde la app de campo, aprobado por el ingeniero a cargo.","Consolidado listo para nómina, exportable en el formato que use la empresa. La integración directa depende de que el proveedor de nómina lo permita.","Asignación de personal a proyectos con el costo de mano de obra cargado al centro de costos."]],
-   ["Ciclo del empleado",["Retiro con checklist: devolución de equipos, reasignación de pendientes y accesos, y anticipos abiertos.","Hojas de vida y certificaciones compartidas con SST."]],
-   ["Obligaciones",["Control de cuotas SENA, personal con estabilidad laboral reforzada y documentos de teletrabajo exigidos por la ARL."]]
-  ],
-  v:[["Planilla de horas","Por periodo, trabajador y proyecto."],["Asignación","Quién está en qué obra y desde cuándo."],["Prenómina","Consolidado listo para liquidar."],["Checklist de retiro","Pendientes por cerrar antes del paz y salvo."]],
-  a:["Horas sin aprobar al cierre del periodo.","Retiro con equipos o anticipos pendientes.","Obligaciones legales próximas a vencer."]},
  {c:"M9",n:"Tablero gerencial y agente",st:"inc",ph:"Mes 1 y meses 7–8",
   why:"La vista de la gerencia: cada proyecto en presupuesto, cronograma y alcance, y un agente que dice dónde mirar sin revisar todo.",
   who:"Gerencia, dirección de proyectos y líderes de área.",
   f:[
    ["Vista por proyecto",["Presupuesto: ejecutado + comprometido vs presupuesto, por rubro, y margen proyectado.","Cronograma: curva S planeado vs real, hitos y atrasos.","Alcance: avance físico por actividad, trámites, RTB, protocolos y documentos pendientes.","Semáforo por proyecto y lista de alertas abiertas."]],
-   ["Vista de empresa",["Portafolio de granjas por etapa: permisos → RTB → diseño → compras → construcción → operación.","Finanzas (flujo de caja, cartera, endeudamiento), compras, inventario, gestión humana y comercial.","Indicadores con meta y cumplimiento."]],
+   ["Vista de empresa",["Portafolio de granjas por etapa: permisos → RTB → diseño → compras → construcción → operación.","Finanzas (flujo de caja, cartera, endeudamiento), compras e inventario.","Indicadores con meta y cumplimiento."]],
    ["Agente de seguimiento",["Revisa a diario si cada responsable cargó lo que debía (bitácora, informe semanal, protocolos); avisa al responsable y luego a gerencia.","Detecta inconsistencias entre módulos: compras vs diseño, despachado vs instalado, anticipos sin legalizar.","Resumen diario por persona con sus pendientes.","Consultas en lenguaje natural, por ejemplo: ¿qué proyectos están por encima del presupuesto?"]]
   ],
   v:[["Portafolio","Embudo de granjas por etapa con semáforo."],["Tablero del proyecto","Presupuesto, curva S y alcance en una pantalla."],["Indicadores de empresa","KPIs por área con meta."],["Bandeja de alertas","Priorizadas por impacto y responsable."],["Asistente","Preguntas en lenguaje natural sobre los datos del sistema."]],
   a:["Resumen diario a cada persona y semanal a gerencia.","Escalamiento cuando un pendiente no se atiende."]},
- {c:"M10",n:"Operación y monitoreo",st:"later",ph:"Fase posterior",
-  why:"El sistema operativo de las plantas en operación. Se cotiza y construye cuando haya granjas operando y hardware definido.",
-  who:"Operación y mantenimiento, gerencia e inversionistas.",
-  f:[
-   ["Captura y alertas",["Inversores por Modbus, estación meteorológica, termografía y medidores de frontera, en una base de datos propia.","Rendimiento esperado vs real por inversor y planta, caídas de equipos y verificación diaria del reporte a XM/ASIC."]],
-   ["Mantenimiento y analítica",["Plan preventivo, órdenes correctivas y costeo de cada visita.","Patrones de falla por equipo y antigüedad, y mantenimiento predictivo."]]
-  ],
-  v:[["Mapa de plantas","Estado en vivo de cada granja."],["Rendimiento","Esperado vs real por inversor."],["Órdenes de trabajo","Preventivas y correctivas por planta."]],
-  a:["Planta, inversor o telemetría caídos.","Día sin reporte de frontera."]},
- {c:"M11",n:"Comercial y CRM",st:"inc",ph:"Meses 5–6",
-  why:"Conecta la venta con el proyecto desde la primera visita y concentra los contactos que llegan por la web y la calculadora solar.",
-  who:"Comercial y gerencia.",
-  f:[
-   ["Entrada de leads",["Registro de los contactos que llegan por la web y la calculadora solar, con su prediseño cuando aplica.","Asignación del lead a un comercial con fecha de próximo contacto."]],
-   ["CRM liviano",["Oportunidades con etapas, valor estimado, probabilidad y próxima acción.","Centro de costos desde la primera visita para cargar gastos comerciales al futuro proyecto.","Conversión de oportunidad ganada a proyecto con un clic, con sus datos ya cargados.","Integración o reemplazo del CRM actual, según se defina."]]
-  ],
-  v:[["Embudo comercial","Oportunidades por etapa y valor."],["Ficha de oportunidad","Historial de contactos, visitas y cotizaciones."],["Bandeja de leads","Contactos nuevos por canal, listos para seguimiento."]],
-  a:["Lead sin contactar.","Oportunidad sin próxima acción definida."]},
  {c:"M12",n:"Legal y cumplimiento contractual",st:"inc",ph:"Meses 6–8",
   why:"Lee los contratos con IA, convierte cada cláusula en obligaciones con fecha y responsable, y alerta cuando un proyecto está incumpliendo o va camino a incumplir algo pactado.",
   who:"Gerencia, área jurídica o abogado externo, dirección de proyectos, compras y contabilidad.",
@@ -869,12 +840,12 @@ const PROBS = [
  ["Avance reportado sin evidencia","Checklists e hitos se marcan como cumplidos sin soporte. La empresa factura, promete fechas o informa a inversionistas con base en un avance que no es real.","Ningún estado cambia sin adjuntar la evidencia; cada cambio queda en una bitácora que no se puede borrar y lo sospechoso alerta a gerencia.",["M0","M1"]],
  ["Costos que se desvían sin alerta","Compras consolidadas, mal asignadas o por encima de lo diseñado se cargan al proyecto equivocado. La desviación se descubre al cierre, cuando el margen ya se perdió.","Toda compra nace atada a un centro de costos y a un rubro con tope; si lo supera, se bloquea y exige aprobación con justificación.",["M3","M7"]],
  ["Documentación de cierre que frena pagos","Protocolos, pruebas y soportes de obra no se suben a tiempo o se pierden. Sin ellos no se liberan retegarantías ni se cierran entregas.","Los protocolos se capturan en campo el mismo día, con fotos y firma, y el dossier de entrega se arma solo con la lista de lo que falta.",["M5"]],
- ["Conocimiento y accesos atados a personas","Correos, claves de portales y pendientes viven en las cuentas de cada empleado. Cuando alguien se retira, la empresa pierde trámites e historial.","Buzones y credenciales corporativos en una bóveda; al retirar a alguien, sus pendientes y accesos se reasignan en un paso.",["M0","M8"]],
+ ["Conocimiento y accesos atados a personas","Correos, claves de portales y pendientes viven en las cuentas de cada empleado. Cuando alguien se retira, la empresa pierde trámites e historial.","Buzones y credenciales corporativos en una bóveda; al retirar a alguien, sus pendientes y accesos se reasignan en un paso.",["M0"]],
  ["Trámites con plazos que nadie controla","Solicitudes a entidades y operadores de red se envían sin control de radicados ni plazos, y los vencimientos se notan tarde.","Plantillas, envío desde el buzón corporativo, conteo de días hábiles con festivos y escalamiento con el borrador listo.",["M1"]],
  ["Equipos y materiales sin trazabilidad","Herramientas, EPP y materiales se pierden entre bodegas y obras, o llegan vencidos o incompletos justo cuando se necesitan.","Hoja de vida de cada activo, despacho con lista y recepción con firma, y bloqueo de lo vencido antes de que salga.",["M4"]],
  ["Días perdidos en sitio","Cuadrillas que llegan sin los cursos, el EPP o la autorización de ingreso que exige el cliente, con personal, viáticos y equipos parados.","Requisitos por cliente cruzados con el personal y el despacho, y el viaje no se programa hasta tener la autorización confirmada.",["M6"]],
  ["Obligaciones contractuales sin seguimiento","Los contratos se firman y se archivan. Hitos, pólizas, preavisos y multas se recuerdan tarde, cuando el incumplimiento ya ocurrió o la penalidad ya corre.","La IA lee cada contrato y lo convierte en obligaciones con fecha y responsable; el sistema las cruza con el avance real y alerta antes de incumplir.",["M12"]],
- ["Trabajo manual repetitivo","Memorias de cálculo, cartas, informes de corte, relaciones de gastos y horas para nómina se arman a mano en cada proyecto y cada periodo.","Documentos generados desde los datos del proyecto, lectura de facturas con IA y horas que llegan directo de la app de campo.",["M2","M5","M7","M8"]],
+ ["Trabajo manual repetitivo","Memorias de cálculo, cartas, informes de corte y relaciones de gastos se arman a mano en cada proyecto y cada periodo.","Documentos generados desde los datos del proyecto y lectura de facturas con IA.",["M2","M5","M7"]],
  ["Dirección sin visibilidad consolidada","Para saber cómo va un proyecto hay que preguntar a varias personas y cruzar archivos; los problemas llegan cuando ya son costosos.","Tablero de presupuesto, cronograma y alcance por proyecto, y un agente que revisa a diario y avisa dónde mirar.",["M9"]]
 ];
 const SCHED = [
@@ -882,13 +853,13 @@ const SCHED = [
  ["Informes de corte y reporte semanal automáticos, trámites v1 y checklist RTB con evidencia",""],
  ["Dossier de entrega, trámites con escalamiento y OR, primeras órdenes de compra digitales",""],
  ["Compras con topes y comité digital, inventario y SST",""],
- ["Activos con hoja de vida, despachos, accesos a sitio y comercial",""],
- ["Comercial y CRM, motor de cálculo v1",""],
- ["Ingeniería asistida, finanzas de proyecto, gestión humana y análisis de contratos",""],
+ ["Activos con hoja de vida, despachos y accesos a sitio",""],
+ ["Motor de cálculo v1",""],
+ ["Ingeniería asistida, finanzas de proyecto y análisis de contratos",""],
  ["Motor de cumplimiento contractual, tablero completo, agente de seguimiento e integraciones",""],
  ["Estabilización con uso real, ajustes, capacitación por rol y entrega final",""]
 ];
-const NEEDS = ["Especificaciones técnicas del proyecto en cotización","Plantilla de orden de compra y lista de precios de materiales","Hojas de cálculo de dimensionamiento, conductores y protecciones","Una memoria de cálculo en Word completa","Plantilla de AutoCAD con cajetín y los planos de un proyecto real","Checklist RTB / ingeniería en Excel","Formatos de bitácora, protocolos, viáticos e informe de corte","Caracterización de procesos del sistema de calidad","Lista de entidades y OR, con un ejemplo de carta y respuesta","Software contable, CRM y nómina actuales, y si tienen API","Dataroom de un proyecto de referencia","Acceso a los datos de una planta en operación","Software de diseño solar usado como referencia"];
+const NEEDS = ["Especificaciones técnicas del proyecto en cotización","Plantilla de orden de compra y lista de precios de materiales","Hojas de cálculo de dimensionamiento, conductores y protecciones","Una memoria de cálculo en Word completa","Plantilla de AutoCAD con cajetín y los planos de un proyecto real","Checklist RTB / ingeniería en Excel","Formatos de bitácora, protocolos, viáticos e informe de corte","Caracterización de procesos del sistema de calidad","Lista de entidades y OR, con un ejemplo de carta y respuesta","Software contable actual y si tiene API","Dataroom de un proyecto de referencia","Software de diseño solar usado como referencia"];
 
 const ICON = {
  M0:"M12 3l9 5-9 5-9-5 9-5zM3 13l9 5 9-5M3 17l9 5 9-5",
@@ -899,10 +870,7 @@ const ICON = {
  M5:"M8 2h8a1 1 0 011 1v18a1 1 0 01-1 1H8a1 1 0 01-1-1V3a1 1 0 011-1zM11 18h2",
  M6:"M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6zM9 12l2 2 4-4",
  M7:"M4 20V11M10 20V5M16 20v-6M21 20H3",
- M8:"M9 11a4 4 0 100-8 4 4 0 000 8zM2 21c0-4 3-6 7-6s7 2 7 6M17 11a3 3 0 100-6M22 21c0-3-2-5-5-5",
  M9:"M3 3h8v8H3zM13 3h8v5h-8zM13 10h8v11h-8zM3 13h8v8H3z",
- M10:"M12 7a5 5 0 100 10 5 5 0 000-10zM12 1v3M12 20v3M1 12h3M20 12h3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1",
- M11:"M12 21a9 9 0 100-18 9 9 0 000 18zM12 16a4 4 0 100-8 4 4 0 000 8zM12 12.5v-1",
  M12:"M12 3v18M6 21h12M4 7h16M4 7l-2.5 7a3 3 0 005 0zM20 7l-2.5 7a3 3 0 005 0z"
 };
 const svg = p => `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${p}"/></svg>`;
@@ -957,25 +925,24 @@ const STAGES = [
  {n:"RTB",ic:"M0",today:"Checklists marcados como completos sin soporte; se factura o se promete con avances que no son reales.",with:"Ningún ítem avanza sin evidencia; el comercial solo ve como listo para cobrar lo aprobado por dirección.",mods:["M1","M12"]},
  {n:"Diseño",ic:"M2",today:"Cálculos en Excel, memorias editadas a mano y planos que no coinciden con la lista de materiales.",with:"Motor de cálculo con normas RETIE, memoria en Word generada sola y validación cruzada entre planos y materiales.",mods:["M2"]},
  {n:"Compras",ic:"M3",today:"Órdenes en Excel y correo, compras consolidadas que terminan cargadas al proyecto equivocado.",with:"Orden de compra digital atada al presupuesto: si se pasa del tope, se bloquea y pide aprobación.",mods:["M3","M4","M7"]},
- {n:"Obra",ic:"M5",today:"Bitácoras y protocolos en papel o Excel; equipos que llegan vencidos o incompletos; días perdidos por accesos.",with:"App de campo sin señal con bitácora, protocolos firmados y fotos; despachos verificados y accesos confirmados antes de viajar.",mods:["M5","M6","M4","M8"]},
- {n:"Entrega",ic:"M12",today:"Dossier armado a última hora; retegarantías retenidas por documentos que faltan.",with:"Dossier de entrega construido solo con lo registrado en obra, con lista de faltantes y alertas de obligaciones del contrato.",mods:["M5","M12"]},
- {n:"Operación",ic:"M10",today:"Datos de planta dispersos y fallas que se descubren cuando ya hay pérdida de generación.",with:"Fase posterior: monitoreo de rendimiento, alertas y mantenimiento predictivo, cuando haya plantas y hardware definidos.",mods:["M10"]}
+ {n:"Obra",ic:"M5",today:"Bitácoras y protocolos en papel o Excel; equipos que llegan vencidos o incompletos; días perdidos por accesos.",with:"App de campo sin señal con bitácora, protocolos firmados y fotos; despachos verificados y accesos confirmados antes de viajar.",mods:["M5","M6","M4"]},
+ {n:"Entrega",ic:"M12",today:"Dossier armado a última hora; retegarantías retenidas por documentos que faltan.",with:"Dossier de entrega construido solo con lo registrado en obra, con lista de faltantes y alertas de obligaciones del contrato.",mods:["M5","M12"]}
 ];
 const track = $("track");
 STAGES.forEach((s,i) => { const b=document.createElement("button"); b.type="button"; b.className="stage"; b.dataset.i=i; b.innerHTML=`<span class="nd">${svg(ICON[s.ic])}</span><span class="lb">${s.n}</span>`; b.addEventListener("click",()=>pickStage(i)); track.appendChild(b); });
 function pickStage(i){
   const s = STAGES[i];
   track.querySelectorAll(".stage").forEach((b,j) => { b.setAttribute("aria-pressed", String(i===j)); b.classList.toggle("done", j<i); });
-  $("trackFill").style.width = (i/(STAGES.length-1)*86)+"%";
+  $("trackFill").style.width = (i/(STAGES.length-1)*83.33)+"%";
   $("stagePanel").innerHTML = `<div class="sp-box today"><h4>Hoy</h4><p>${s.today}</p></div><div class="sp-box with"><h4>Con el sistema</h4><p>${s.with}</p></div><div class="sp-box mods"><h4>Módulos que trabajan aquí</h4><div class="chipmods">${s.mods.map(c=>{const m=MOD(c);return `<button type="button" class="chipmod" data-open="${c}"><span class="ic">${svg(ICON[c])}</span><span>${m.n}<small>${c} · ver detalle</small></span></button>`;}).join("")}</div></div>`;
 }
 pickStage(4);
-$("always").innerHTML = `<span>En todas las etapas:</span>` + ["M0","M9","M7","M12","M11"].map(c=>`<button type="button" class="chip" data-open="${c}">${MOD(c).n}</button>`).join("");
+$("always").innerHTML = `<span>En todas las etapas:</span>` + ["M0","M9","M7","M12"].map(c=>`<button type="button" class="chip" data-open="${c}">${MOD(c).n}</button>`).join("");
 
 /* ---------- Module grid ---------- */
-const AREAS = [["all","Todos"],["obra","Obra"],["ing","Trámites e ingeniería"],["ofi","Compras y finanzas"],["ger","Gerencia y legal"],["com","Comercial"]];
-const AREA = {M0:"ger",M1:"ing",M2:"ing",M3:"ofi",M4:"obra",M5:"obra",M6:"obra",M7:"ofi",M8:"ofi",M9:"ger",M10:"obra",M11:"com",M12:"ger"};
-const ORDER = ["M5","M0","M9","M1","M3","M4","M6","M2","M7","M8","M12","M11","M10"];
+const AREAS = [["all","Todos"],["obra","Obra"],["ing","Trámites e ingeniería"],["ofi","Compras y finanzas"],["ger","Gerencia y legal"]];
+const AREA = {M0:"ger",M1:"ing",M2:"ing",M3:"ofi",M4:"obra",M5:"obra",M6:"obra",M7:"ofi",M9:"ger",M12:"ger"};
+const ORDER = ["M5","M0","M9","M1","M3","M4","M6","M2","M7","M12"];
 let area = "all";
 const fl = $("filters");
 AREAS.forEach(([k,l]) => { const b=document.createElement("button"); b.type="button"; b.className="chip"; b.dataset.a=k; b.textContent=l; b.setAttribute("aria-pressed", String(k===area)); b.onclick=()=>{ area=k; fl.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed", String(x.dataset.a===k))); filterMods(); }; fl.appendChild(b); });
@@ -1021,11 +988,11 @@ const MS = ["Nov","Dic","Ene","Feb","Mar","Abr","May","Jun","Jul"];
 const GR = [
  {c:"M5",n:"App de campo",s:0,l:1},{c:"M0",n:"Núcleo",s:0,l:1},{c:"M9",n:"Tablero v1",s:0,l:1},
  {c:"M1",n:"Trámites y RTB",s:1,l:2},{c:"M3",n:"Compras",s:2,l:3},{c:"M4",n:"Inventario y activos",s:3,l:2},
- {c:"M6",n:"SST y accesos",s:3,l:2},{c:"M11",n:"Comercial y CRM",s:4,l:2},{c:"M2",n:"Ingeniería asistida",s:5,l:2},
- {c:"M7",n:"Finanzas de proyecto",s:5,l:2},{c:"M12",n:"Legal y contratos",s:5,l:3},{c:"M8",n:"Gestión humana",s:6,l:2},
- {c:"M9",n:"Tablero completo y agente",s:6,l:2},{c:"—",n:"Estabilización y entrega",s:8,l:1},{c:"M10",n:"Operación y monitoreo",s:8,l:1,later:true}
+ {c:"M6",n:"SST y accesos",s:3,l:2},{c:"M2",n:"Ingeniería asistida",s:5,l:2},
+ {c:"M7",n:"Finanzas de proyecto",s:5,l:2},{c:"M12",n:"Legal y contratos",s:5,l:3},
+ {c:"M9",n:"Tablero completo y agente",s:6,l:2},{c:"—",n:"Estabilización y entrega",s:8,l:1}
 ];
-const TITLES = ["La obra bajo control","Informes que se arman solos","Trámites y compras en orden","Bodega y seguridad en sitio","Activos, despachos y comercial","Ingeniería y finanzas","Personas y contratos","Control total","Entrega y estabilización"];
+const TITLES = ["La obra bajo control","Informes que se arman solos","Trámites y compras en orden","Bodega y seguridad en sitio","Activos y despachos","Ingeniería y finanzas","Finanzas y contratos","Control total","Entrega y estabilización"];
 let mon = 0, playT = null;
 $("months").innerHTML = MS.map((m,i)=>`<button type="button" data-m="${i}">${m}</button>`).join("");
 $("months").addEventListener("click", e => { const b = e.target.closest("button"); if (b){ stopPlay(); setMonth(+b.dataset.m); } });
