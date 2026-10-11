@@ -1034,11 +1034,11 @@ function hbars(rows,unit=''){const mx=Math.max(...rows.map(r=>r[1]));return `<di
 /* =================== estructura y navegación =================== */
 const MODS=[
  ['General',[['inicio','Inicio','home'],['proyectos','Proyectos','folder']]],
- ['Ciclo de la granja',[['tramites','Trámites y RTB','stamp'],['ingenieria','Ingeniería','ruler'],['compras','Compras','cart'],['bodega','Bodega y logística','box'],['obra','Obra','helmet'],['sst','SST y accesos','shield'],['operacion','Operación','zap']]],
- ['Administración',[['finanzas','Finanzas de proyecto','wallet'],['personas','Gestión humana','users']]],
- ['Crecimiento',[['comercial','Comercial','brief']]]
+ ['Ciclo de la granja',[['tramites','Trámites y RTB','stamp'],['ingenieria','Ingeniería','ruler'],['compras','Compras','cart'],['bodega','Bodega y logística','box'],['obra','Obra','helmet'],['sst','SST y accesos','shield'],['operacion','Operación · fase 2','zap']]],
+ ['Administración',[['finanzas','Finanzas de proyecto','wallet'],['personas','Gestión humana · fase 2','users']]],
+ ['Crecimiento',[['comercial','Comercial · fase 2','brief']]]
 ];
-const TITLE={inicio:'Inicio',proyectos:'Proyectos',tramites:'Trámites y RTB',ingenieria:'Ingeniería',compras:'Compras',bodega:'Bodega y logística',obra:'Obra',sst:'SST y accesos',operacion:'Operación y monitoreo',finanzas:'Finanzas de proyecto',personas:'Gestión humana',comercial:'Comercial'};
+const TITLE={inicio:'Inicio',proyectos:'Proyectos',tramites:'Trámites y RTB',ingenieria:'Ingeniería',compras:'Compras',bodega:'Bodega y logística',obra:'Obra',sst:'SST y accesos',operacion:'Operación y monitoreo (fase 2)',finanzas:'Finanzas de proyecto',personas:'Gestión humana (fase 2)',comercial:'Comercial (fase 2)'};
 function renderSide(){const oa=ALERTS.filter(a=>!S.res.has(a.id));
  $('#side').innerHTML=`<div class="logo">${LOGO?`<img src="${LOGO}" alt="Ambiente Solar">`:`<span class="mark">${ic('sun',22)}</span><div><b>Ambiente Solar</b><span>Centro de control</span></div>`}</div><nav class="nav" aria-label="Módulos">${MODS.map(([g,items])=>`<div class="ng">${g}</div>`+items.map(([id,l,i])=>{const al=oa.filter(a=>a.m===id&&a.sev!=='info'),c=al.some(a=>a.sev==='crit');const on=S.page===id||(id==='proyectos'&&S.page==='proyecto');return `<a href="#${id}" class="${on?'on':''}" ${on?'aria-current="page"':''}>${ic(i)}<span class="lbl">${l}</span>${al.length?`<span class="bdg ${c?'':'w'}">${al.length}</span>`:''}</a>`}).join('')).join('')}</nav><div class="side-foot">Prototipo con datos simulados.</div>`}
 function renderTop(){const oa=openAlerts();const p=S.page==='proyecto'?proj(S.pid):null;
@@ -1806,7 +1806,7 @@ function sessGet(){try{return sessionStorage.getItem(AKEY)||localStorage.getItem
 function sessSet(uid,remember){try{(remember?localStorage:sessionStorage).setItem(AKEY,uid)}catch(e){}}
 function sessClear(){try{sessionStorage.removeItem(AKEY);localStorage.removeItem(AKEY)}catch(e){}}
 async function sha256(s){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s));return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}
-function gateHTML(){return `<div class="gate-brand"><img src="${LOGO}" alt="Ambiente Solar, energía renovable" class="gate-logo"><div class="gate-copy"><span class="eyebrow">Centro de control</span><h1>Cada granja, del permiso a la operación, en un solo lugar.</h1><p>${esc(EMP.lema)}.</p></div><div class="gate-facts"><span><b>12</b> granjas</span><span><b>11,54</b> MWp</span><span><b>13</b> módulos</span></div></div>
+function gateHTML(){return `<div class="gate-brand"><img src="${LOGO}" alt="Ambiente Solar, energía renovable" class="gate-logo"><div class="gate-copy"><span class="eyebrow">Centro de control</span><h1>Cada granja, del permiso a la entrega, en un solo lugar.</h1><p>${esc(EMP.lema)}.</p></div><div class="gate-facts"><span><b>12</b> granjas</span><span><b>11,54</b> MWp</span><span><b>10</b> módulos</span></div></div>
  <div class="gate-form-wrap"><form class="gate-form" id="gateForm" novalidate><img src="${LOGO}" alt="" class="gate-logo-sm" aria-hidden="true"><h2>Iniciar sesión</h2><p class="muted">Ingrese con el correo y la contraseña que le asignó el administrador.</p>
   <div class="field"><label for="g-email">Correo</label><input id="g-email" type="email" autocomplete="username" inputmode="email" placeholder="nombre@empresa.com" required></div>
   <div class="field"><label for="g-pass">Contraseña</label><div class="pw"><input id="g-pass" type="password" autocomplete="current-password" required><button type="button" class="pw-t" data-act="gatePw" aria-label="Mostrar contraseña">Mostrar</button></div></div>
